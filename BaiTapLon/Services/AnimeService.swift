@@ -7,3 +7,16 @@
 //
 
 import Foundation
+
+class AnimeService: Service {
+    static let shared = AnimeService()
+    
+    // get top anime
+    func getTop(callback: @escaping ([Anime]?)-> Void) {
+        self.get(key: "top", uri: "/top/anime/1/upcoming") { data in
+            if let animes = data as? [[String: Any]] {
+                callback(animes.map { return Anime(anime: $0) })
+            }
+        }
+    }
+}

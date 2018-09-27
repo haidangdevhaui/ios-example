@@ -9,7 +9,8 @@
 import UIKit
 
 class AnimeTableViewController: UITableViewController {
-
+    var animes: [Anime] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,6 +19,11 @@ class AnimeTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
+        AnimeService.shared.getTop() { data in
+            self.animes = data!
+            self.tableView.reloadData()
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,23 +35,24 @@ class AnimeTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return animes.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "AnimeCell", for: indexPath) as! AnimeTableViewCell
 
         // Configure the cell...
-
+        let anime = animes[indexPath.row]
+        cell.anime = anime
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.
@@ -92,4 +99,18 @@ class AnimeTableViewController: UITableViewController {
     }
     */
 
+    @IBAction func backToAnimeTable(segue: UIStoryboardSegue) {
+        
+    }
+    
+    @IBAction func saveAnime(segue: UIStoryboardSegue) {
+        if let addAnime = segue.source as? AddAnimeViewController {
+            if let anime = addAnime.anime {
+                print(anime)
+                self.animes.append(anime)
+                let indexPath = IndexPath(row: self.animes.count - 1, section: 0)
+                tableView.insertRows(at: [indexPath], with: .automatic)
+            }
+        }
+    }
 }

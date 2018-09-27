@@ -7,9 +7,22 @@
 //
 
 import UIKit
+import Kingfisher
 
 class AnimeTableViewCell: UITableViewCell {
-
+    
+    @IBOutlet weak var animeImage: UIImageView!
+    @IBOutlet weak var animeName: UILabel!
+    
+    var anime: Anime! {
+        didSet {
+            animeName.text = anime.title
+            if let url = URL(string: anime.image_url) {
+                animeImage.kf.setImage(with: url, placeholder: #imageLiteral(resourceName: "default_image"))
+            }
+        }
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

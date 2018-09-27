@@ -7,21 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4539923D168C9A2704EDF449 /* Pods_BaiTapLon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6AEE746326F01893C70388D /* Pods_BaiTapLon.framework */; };
+		CE2E720F215B593A004D45A2 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E720E215B593A004D45A2 /* Service.swift */; };
+		CE2E7211215B6211004D45A2 /* AnimeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E7210215B6211004D45A2 /* AnimeService.swift */; };
+		CE72A154215A48E500557645 /* Author.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE72A153215A48E500557645 /* Author.swift */; };
+		CE72A156215A492A00557645 /* AuthorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE72A155215A492A00557645 /* AuthorData.swift */; };
 		CE942CD32159E0BD00469A78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE942CD22159E0BD00469A78 /* AppDelegate.swift */; };
-		CE942CD52159E0BD00469A78 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE942CD42159E0BD00469A78 /* ViewController.swift */; };
 		CE942CD82159E0BD00469A78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE942CD62159E0BD00469A78 /* Main.storyboard */; };
 		CE942CDA2159E0BE00469A78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE942CD92159E0BE00469A78 /* Assets.xcassets */; };
 		CE942CDD2159E0BE00469A78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE942CDB2159E0BE00469A78 /* LaunchScreen.storyboard */; };
+		CE942CE6215A080F00469A78 /* Anime.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE942CE5215A080F00469A78 /* Anime.swift */; };
+		CE942CE9215A09F600469A78 /* AnimeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE942CE8215A09F600469A78 /* AnimeTableViewController.swift */; };
+		CE942CED215A1E8300469A78 /* AnimeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE942CEC215A1E8300469A78 /* AnimeTableViewCell.swift */; };
+		CE942CEF215A285700469A78 /* AddAnimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE942CEE215A285700469A78 /* AddAnimeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		40FC018A130C4F1CC48483A4 /* Pods-BaiTapLon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaiTapLon.release.xcconfig"; path = "Pods/Target Support Files/Pods-BaiTapLon/Pods-BaiTapLon.release.xcconfig"; sourceTree = "<group>"; };
+		463F58114B5C219CE3E29F81 /* Pods-BaiTapLon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaiTapLon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BaiTapLon/Pods-BaiTapLon.debug.xcconfig"; sourceTree = "<group>"; };
+		A6AEE746326F01893C70388D /* Pods_BaiTapLon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BaiTapLon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE2E720E215B593A004D45A2 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		CE2E7210215B6211004D45A2 /* AnimeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeService.swift; sourceTree = "<group>"; };
+		CE72A153215A48E500557645 /* Author.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Author.swift; sourceTree = "<group>"; };
+		CE72A155215A492A00557645 /* AuthorData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorData.swift; sourceTree = "<group>"; };
 		CE942CCF2159E0BD00469A78 /* BaiTapLon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaiTapLon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE942CD22159E0BD00469A78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CE942CD42159E0BD00469A78 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CE942CD72159E0BD00469A78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE942CD92159E0BE00469A78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE942CDC2159E0BE00469A78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE942CDE2159E0BE00469A78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE942CE5215A080F00469A78 /* Anime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Anime.swift; sourceTree = "<group>"; };
+		CE942CE8215A09F600469A78 /* AnimeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeTableViewController.swift; sourceTree = "<group>"; };
+		CE942CEC215A1E8300469A78 /* AnimeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeTableViewCell.swift; sourceTree = "<group>"; };
+		CE942CEE215A285700469A78 /* AddAnimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAnimeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +47,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4539923D168C9A2704EDF449 /* Pods_BaiTapLon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B40971CA4B5B4E6FF21757AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A6AEE746326F01893C70388D /* Pods_BaiTapLon.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE72A152215A47FB00557645 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CE2E720E215B593A004D45A2 /* Service.swift */,
+				CE2E7210215B6211004D45A2 /* AnimeService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		CE942CC62159E0BD00469A78 = {
 			isa = PBXGroup;
 			children = (
 				CE942CD12159E0BD00469A78 /* BaiTapLon */,
 				CE942CD02159E0BD00469A78 /* Products */,
+				D13664117F390097EC8132A2 /* Pods */,
+				B40971CA4B5B4E6FF21757AD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +92,45 @@
 		CE942CD12159E0BD00469A78 /* BaiTapLon */ = {
 			isa = PBXGroup;
 			children = (
+				CE72A152215A47FB00557645 /* Services */,
+				CE942CE7215A09B800469A78 /* Controllers */,
+				CE942CE4215A07CB00469A78 /* Models */,
 				CE942CD22159E0BD00469A78 /* AppDelegate.swift */,
-				CE942CD42159E0BD00469A78 /* ViewController.swift */,
 				CE942CD62159E0BD00469A78 /* Main.storyboard */,
 				CE942CD92159E0BE00469A78 /* Assets.xcassets */,
 				CE942CDB2159E0BE00469A78 /* LaunchScreen.storyboard */,
 				CE942CDE2159E0BE00469A78 /* Info.plist */,
 			);
 			path = BaiTapLon;
+			sourceTree = "<group>";
+		};
+		CE942CE4215A07CB00469A78 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CE942CE5215A080F00469A78 /* Anime.swift */,
+				CE72A153215A48E500557645 /* Author.swift */,
+				CE72A155215A492A00557645 /* AuthorData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CE942CE7215A09B800469A78 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CE942CE8215A09F600469A78 /* AnimeTableViewController.swift */,
+				CE942CEC215A1E8300469A78 /* AnimeTableViewCell.swift */,
+				CE942CEE215A285700469A78 /* AddAnimeViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D13664117F390097EC8132A2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				463F58114B5C219CE3E29F81 /* Pods-BaiTapLon.debug.xcconfig */,
+				40FC018A130C4F1CC48483A4 /* Pods-BaiTapLon.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +140,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE942CE12159E0BE00469A78 /* Build configuration list for PBXNativeTarget "BaiTapLon" */;
 			buildPhases = (
+				92FBA88907EB74A420A4B178 /* [CP] Check Pods Manifest.lock */,
 				CE942CCB2159E0BD00469A78 /* Sources */,
 				CE942CCC2159E0BD00469A78 /* Frameworks */,
 				CE942CCD2159E0BD00469A78 /* Resources */,
+				5AA38D935155E41C240FCA47 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,12 +201,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5AA38D935155E41C240FCA47 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BaiTapLon/Pods-BaiTapLon-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BaiTapLon/Pods-BaiTapLon-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92FBA88907EB74A420A4B178 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BaiTapLon-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CE942CCB2159E0BD00469A78 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE942CD52159E0BD00469A78 /* ViewController.swift in Sources */,
+				CE72A156215A492A00557645 /* AuthorData.swift in Sources */,
+				CE942CE9215A09F600469A78 /* AnimeTableViewController.swift in Sources */,
+				CE942CEF215A285700469A78 /* AddAnimeViewController.swift in Sources */,
+				CE942CED215A1E8300469A78 /* AnimeTableViewCell.swift in Sources */,
+				CE2E7211215B6211004D45A2 /* AnimeService.swift in Sources */,
+				CE942CE6215A080F00469A78 /* Anime.swift in Sources */,
+				CE2E720F215B593A004D45A2 /* Service.swift in Sources */,
+				CE72A154215A48E500557645 /* Author.swift in Sources */,
 				CE942CD32159E0BD00469A78 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,6 +397,7 @@
 		};
 		CE942CE22159E0BE00469A78 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 463F58114B5C219CE3E29F81 /* Pods-BaiTapLon.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,6 +416,7 @@
 		};
 		CE942CE32159E0BE00469A78 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40FC018A130C4F1CC48483A4 /* Pods-BaiTapLon.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

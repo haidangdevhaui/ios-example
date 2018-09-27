@@ -1,0 +1,6 @@
+framework module Pods_BaiTapLon {
+  umbrella header "Pods-BaiTapLon-umbrella.h"
+
+  export *
+  module * { export * }
+}
